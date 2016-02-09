@@ -7,7 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Proyecto;
-using Proyecto.Models;
+
 
 namespace Proyecto.Controllers
 {

@@ -135,11 +135,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\personaModel.cs" />
-    <Compile Include="persona.cs" />
+    <Compile Include="Models\persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tipo_documento.cs" />
-    <Compile Include="tipo_vehiculo.cs" />
+    <Compile Include="Models\tipo_documento.cs" />
+    <Compile Include="Models\tipo_vehiculo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
