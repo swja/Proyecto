@@ -1,0 +1,90 @@
+﻿@model Proyecto.persona
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>persona</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_documento.Tipo_Documento1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_documento.Tipo_Documento1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_vehiculo.Tipo_vehiculo1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_vehiculo.Tipo_vehiculo1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_Pers_encontro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Pers_encontro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ape_Pers_encontro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ape_Pers_encontro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar_encontro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lugar_encontro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_registro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_registro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
