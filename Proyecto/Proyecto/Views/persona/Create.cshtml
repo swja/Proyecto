@@ -15,21 +15,25 @@
         <h4>persona</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
+       <!--
+       ID PERSONA NO VA
+            <div class="form-group">
             @Html.LabelFor(model => model.id_persona, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.id_persona, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.id_persona, "", new { @class = "text-danger" })
             </div>
-        </div>
+             </div>
+           -->
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.idTipo_Doc, "idTipo_Doc", htmlAttributes: new { @class = "control-label col-md-2" })
+         <div class="form-group">
+            @Html.LabelFor(model => model.idTipo_Doc, "Tipo de Documento", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("idTipo_Doc", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.idTipo_Doc, "", new { @class = "text-danger" })
             </div>
         </div>
+
 
         <div class="form-group">
             @Html.LabelFor(model => model.id_Tipo_Vehiculo, "id_Tipo_Vehiculo", htmlAttributes: new { @class = "control-label col-md-2" })
@@ -38,7 +42,7 @@
                 @Html.ValidationMessageFor(model => model.id_Tipo_Vehiculo, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        
         <div class="form-group">
             @Html.LabelFor(model => model.Cedula, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">

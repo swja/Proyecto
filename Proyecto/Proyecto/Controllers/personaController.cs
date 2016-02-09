@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Proyecto;
+using Proyecto.Models;
 
 namespace Proyecto.Controllers
 {
@@ -39,8 +40,10 @@ namespace Proyecto.Controllers
         // GET: persona/Create
         public ActionResult Create()
         {
+
             ViewBag.idTipo_Doc = new SelectList(db.tipo_documento, "idTipo_Doc", "Tipo_Documento1");
             ViewBag.id_Tipo_Vehiculo = new SelectList(db.tipo_vehiculo, "id_Tipo_vehiculo", "Tipo_vehiculo1");
+       
             return View();
         }
 
